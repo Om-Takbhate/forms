@@ -1,0 +1,62 @@
+<!-- label : to give the name to get input 
+        input to get input-->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms-Lets learn</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="post">
+        <div>
+            <label for="username">Enter username : </label>
+            <input type="text" required id="username" name="username"
+            placeholder="Enter username" autofocus>
+        </div>
+        <div>
+            <label for="gender">Enter your gender : </label>
+            
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label>
+            
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label>
+        </div>
+        <div>
+            <input type="checkbox" id="subscribe" name="subscribe" value="yes">Get notified on whatsapp</label>
+
+        </div>
+        <div>
+            <input type="checkbox" name="install vs" id="install vs">
+            <label for="insatall vs">Install VS</label>
+        </div>
+        <div>
+            <label for="commment">Enter comment below</label>
+            <br>
+            <textarea name="comment" id="comment" cols="30" rows="10"></textarea>
+        </div>
+        <!-- Select Tag -->
+        <div>
+            <label for="fruits">Select the fruit :</label>
+            <select name="fruits" id="fruits">
+                
+                <option value="apple">apple</option>
+                <option value="mango">mango</option>
+                <option value="banana">Banana</option>
+            </select>
+        </div>
+
+        <!-- textarea -->
+        <div>
+            <label for="suggetion"></label>Give your suggestions below</label>
+            <br>
+            <textarea name="suggetion" id="suggetion" cols="30" rows="15"></textarea>
+        </div>
+    </form>
+    <script src="script.js"></script>
+</body>
+</html>
